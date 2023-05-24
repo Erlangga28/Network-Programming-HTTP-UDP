@@ -19,9 +19,9 @@ print(res)
 res = f.sendcmd("TYPE A")
 print(res)
 
-fp= open("/Volumes/All Data/Github/dor.txt", 'rb')
+fp= open("/Volumes/All Data/Github/resource.txt", 'rb')
 
-res = f.storbinary('STOR %s' % os.path.basename("cobalagi.txt"), fp, 1024)
+res = f.storbinary('STOR %s' % os.path.basename("Hasil.txt"), fp, 1024)
 print(res)
 fp.close()
 

@@ -7,7 +7,7 @@ ff = FTP_TLS()
 
 f.connect(host='127.0.0.1')
 res = f.getwelcome()
-print(res.split('\n',1)[0])
+print(res.split('\n',1)[-2])
 
 res = f.sendcmd("User Erlangga")
 print(res)
