@@ -5,6 +5,9 @@ f = FTP()
 f.set_pasv(False)
 ff = FTP_TLS()
 
+# print("welcome: ", f.getwelcome())
+
+#print(f)
 f.connect(host='127.0.0.1')
 res = f.getwelcome()
 print(res.split('\n',1)[0])
@@ -15,8 +18,8 @@ print(res)
 res = f.sendcmd("PASS ranggaaja")
 print(res)
 
-res = f.sendcmd("SYST")
-print(res)
+res = f.sendcmd("PWD")
+print(res.replace("is current directory.", ""))
 
 res = f.sendcmd("QUIT")
 print(res)

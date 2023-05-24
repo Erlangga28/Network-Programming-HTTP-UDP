@@ -12,10 +12,10 @@ f.connect(host='127.0.0.1')
 res = f.getwelcome()
 print(res.split('\n',1)[0])
 
-res = f.sendcmd("User Erlangga")
+res = f.sendcmd("User rangga")
 print(res)
 
-res = f.sendcmd("PASS 1234")
+res = f.sendcmd("PASS ranggaaja")
 print(res)
 
 res = f.sendcmd("MKD test")
